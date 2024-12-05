@@ -2,6 +2,28 @@
 <html>
 <head>
 <Title>Unmanned Systems</title>
+ <style>
+/* breaks when imported it into the stylesheet*/
+        .hover-link {
+            position: relative;
+            text-decoration: none;
+            color: blue;
+        }
+
+        .hover-image {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 5px; /* Space between link and image */
+            z-index: 1;
+        }
+
+        .hover-link:hover .hover-image {
+            display: block;
+        }
+/*********************************************/
+    </style>
 <link rel="stylesheet" type="text/css" href="StylePage.css">
 </head>
 <body>
@@ -11,9 +33,13 @@
     <p> Welcome, to Unmanned Systems this store is dedicated to providing the general public with access to drones and remote-controlled or self-driving Systems.</p>
 <!---- End of About us ---->
 <h2>Chose one of the following to Browse:</h2>
-<div><a href= "DronesPage.htm"> <h3> Drones </h3></a></div>
-
-<a href= "AircraftsPage.htm"> <h3> Aircrafts </h3></a>
+<a href=""DronesPage.htm" class="hover-link"><h3>Drones</h3>
+    <img src= "Website_Images\Drones_DisplayIMG.png" height=150px width=200px " alt="Image" class="hover-image">
+</a>
+/* hey instead of this image stuff how but the title list things unded the Header/title and whe have a drop down meanu*?
+<a href= "AircraftsPage.htm" class="hover-link"> <h3> Aircrafts </h3>
+<img src= "Website_Images\General-Atomics-MQ-9-Reaper-reconnaissance-US-Air-2008.png" height=150px width=200px " alt="Image" class="hover-image">
+</a>
 
 </body>
 </html>
