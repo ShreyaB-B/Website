@@ -1,8 +1,8 @@
 /* Code taken from and helped written by codepen.io and W3schools*/
-#TitleBar{
-  background-color: #007bff; 
+.TitleBar{
+  background-color: #191617; 
   color: white;
-  padding: 15px 30px;
+  padding: 5px 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   position:fixed;
@@ -11,28 +11,33 @@
   z-index: 1000;
 }
 .navBar {
-  display: flex; /* Use flexbox to arrange items horizontally */
-  overflow: hidden; /* Corrected typo */
-  background-color: black;
+  display: flex; /* Using flexbox to arrange items horizontally */
+  overflow: hidden;
+  background-color: #A3B6B4;
 }
 .navBar a{
-  float:left;
   display: block;
   color: white;
   text-align: center;
   padding: 15px 30px;
   text-decoration: none;
 }
-
+.navBar a:hover{
+background-color: #0056b3;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f7f7f7;
+  background-color: #EDEAE2;
+  color: #2B2B2B;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  flex-wrap: wrap; /*adjust to the screen*/
+  margin: 0;
 }
 
 /* Product Card Styles */
@@ -44,13 +49,13 @@ body {
   width: 280px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin: 20px;
-  border: 1px solid #e0e0e0; 
+  border: 1px solid #0056b3; 
 }
 
 .product-card:hover {
   transform: translateY(-5px); 
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
-
+}
 /* Product Image */
 .product-image {
   width: 100%;
@@ -71,7 +76,7 @@ body {
 .product-name {
   font-size: 18px;
   font-weight: 600; 
-  color: #333; 
+  color: #191617; 
   margin-bottom: 8px;
   transition: color 0.2s ease;
 }
@@ -112,9 +117,25 @@ body {
   transform: scale(1.05);
 }
 
+footer {
+  background-color: #191617; 
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: auto;
+}
+
+footer a {
+  color: #F19335;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 /* Responsiveness */
 @media (max-width: 768px) {
   .product-card {
-    width: 220px; /* Adjust width for smaller screens */
+    width: 220px; /* Adjust width */
   }
 }
